@@ -19,20 +19,6 @@ var keyup = player.keyup;
 window.Script1 = function()
 {
   var player = GetPlayer();
-var volume = player.GetVar("Slider1");
-
-// Convert 0–100 to 0–1 scale
-var normalizedVolume = volume / 100;
-
-// Send to web object
-var iframe = document.querySelector("iframe");
-iframe.contentWindow.postMessage(normalizedVolume, "*");
-
-}
-
-window.Script2 = function()
-{
-  var player = GetPlayer();
 
 // Get today's date
 var today = new Date();
